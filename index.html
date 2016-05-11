@@ -3,112 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <link rel="stylesheet" href="bootstrap-3.3.6-dist/css/bootstrap.css">
-
-    <link rel="stylesheet" href="animate.css">
-    <link rel="stylesheet" href="style.css">
-
     <script src="jquery.js"></script>
-
-    <script src="bootstrap-3.3.6-dist/js/bootstrap.js"></script>
-
-    <script src="js.js"></script>
 </head>
 <body>
-<div class="container">
-    <div class="row">
-        <div class="col-md-12">
-            <nav class="navbar navbar-default">
+<div class="banner"></div>
+<script type="text/javascript">
+    jQuery(function () {
+        var banner = $('.banner');
+        var content = '<img id="cat" src="ulybayushhiesya-kotiki-01.jpg" alt="">' +
+                '<img id="handWithPhone" style="    transform-origin: 300px 100px;transform: rotate(0deg);"' +
+                ' src="mobile-hand-phone.png" alt="">' +
+                '<div id="photoMeBlock" style="z-index: 100;' +
+                'border-radius: 15px;max-width: 100%;position:' +
+                ' absolute;background: #2D2D2D;left: 95px;opacity: 0.75;top: 215px; cursor: pointer;">' +
+                '<h3 style="text-align: center;padding: 10px;color: #FFFFFF;margin: 0;">Сфоткай Котика!</h3>' +
+                '</div>' +
+                '<div style="background:#eBeBeB; height: 14px; bottom: 0; width: 100%; z-index:200;"></div>';
 
-                <div class="nav-container">
-                    <div class="col-sm-2 first-menu">
-                        <ul class="list-group">
-                            <li class="list-group-item"><a href="#">Hello!</a></li>
-                            <li class="list-group-item"><a href="#">Hello!</a></li>
-                            <li class="list-group-item"><a href="#">Hello!</a></li>
-                            <li class="list-group-item"><a href="#">Hello!</a></li>
-                            <li class="list-group-item"><a href="#">Hello!</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-sm-2 second-menu">
-                        <ul class="list-group">
-                            <li class="list-group-item"><a href="#">Hello!</a></li>
-                            <li class="list-group-item"><a href="#">Hello!</a></li>
-                            <li class="list-group-item"><a href="#">Hello!</a></li>
-                            <li class="list-group-item"><a href="#">Hello!</a></li>
-                            <li class="list-group-item"><a href="#">Hello!</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-sm-8 third-menu">
-                        <div class="row">
-                            <div class="col-sm-4">
-                                <a href="#">
-                                    <div class="thumbnail unit">
-                                        <img src="http://placehold.it/150x150">
-                                        <div class="caption">
-                                            <h3>Lorem ipsum</h3>
-                                            <p>Lorem ipsum dolor sit amet</p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-sm-4">
-                                <a href="#">
-                                    <div class="thumbnail unit">
-                                        <img src="http://placehold.it/150x150">
-                                        <div class="caption">
-                                            <h3>Lorem ipsum</h3>
-                                            <p>Lorem ipsum dolor sit amet</p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-sm-4">
-                                <a href="#">
-                                    <div class="thumbnail unit">
-                                        <img src="http://placehold.it/150x150">
-                                        <div class="caption">
-                                            <h3>Lorem ipsum</h3>
-                                            <p>Lorem ipsum dolor sit amet</p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        banner.css({
+            "height": "280px",
+            "width": "336px",
+            "overflow": "hidden",
+            "position": "relative",
+            "border": "1px solid #f7f7f7",
+            "background": "#eBeBeB"
+        });
 
-                <ul class="nav navbar-nav">
-                    <li class="animated">
-                        <a href="">href="#"</a>
-                        <ul>
-                            <li><a href="#">href="#"</a></li>
-                            <li><a href="#">href="#"</a></li>
-                            <li><a href="#">href="#"</a></li>
-                            <li><a href="#">href="#"</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="">href="#"</a></li>
-                    <li><a href="">href="#"</a></li>
-                    <li><a href="">href="#"</a></li>
-                    <li><a href="">href="#"</a></li>
-                    <li><a href="">href="#"</a></li>
-                    <li><a href="">href="#"</a></li>
-                    <li><a href="">href="#"</a></li>
-                </ul>
-            </nav>
+        banner.append(content);
 
+        $(".banner > *").css({
+            "max-width": "100%",
+            "position": "absolute"
+        });
 
-            <div>
-                <div class="foo2">
+        $('#cat').css({
+            "top": "14px"
+        });
 
-                </div>
-                <div class="foo1">
-
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+        $('#handWithPhone').css({
+            "top": "55px",
+            "left": "76px"
+        });
+    });
+</script>
 </body>
 </html>
